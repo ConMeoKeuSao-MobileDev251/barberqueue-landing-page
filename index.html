@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BarberQueue - Book your haircut instantly. No more waiting, no more phone calls.">
+  <title>BarberQueue - Smart Barber Booking</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav__container">
+      <a href="#" class="nav__logo">
+        <span class="nav__logo-icon">&#9986;</span>
+        BarberQueue
+      </a>
+      <ul class="nav__links">
+        <li><a href="#problem">Problem</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#preview">Preview</a></li>
+        <li><a href="#design">Design</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero" id="hero">
+    <!-- Decorative background elements -->
+    <div class="hero__bg">
+      <div class="hero__blob hero__blob--1"></div>
+      <div class="hero__blob hero__blob--2"></div>
+      <div class="hero__grid-pattern"></div>
+    </div>
+
+    <div class="hero__container">
+      <div class="hero__content">
+        <div class="hero__badge">
+          <span class="hero__badge-dot"></span>
+          Booking Made Simple
+        </div>
+        <h1 class="hero__title">
+          Book Your Haircut<br>
+          <span class="hero__title--accent">Without the Wait</span>
+        </h1>
+        <p class="hero__subtitle">
+          BarberQueue connects you with local barber shops instantly.
+          See real-time availability, book in seconds, and never waste time waiting again.
+        </p>
+        <div class="hero__cta">
+          <a href="#preview" class="btn btn--primary">
+            <span>See How It Works</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="#design" class="btn btn--secondary">View Design</a>
+        </div>
+
+        <!-- Trust indicators -->
+        <div class="hero__trust">
+          <div class="hero__trust-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+            <span>4.9 Rating</span>
+          </div>
+          <div class="hero__trust-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+            <span>500+ Users</span>
+          </div>
+          <div class="hero__trust-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+              <polyline points="22 4 12 14.01 9 11.01"/>
+            </svg>
+            <span>Free to Use</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__visual">
+        <div class="hero__phone-wrapper">
+          <!-- Glow effect behind phone -->
+          <div class="hero__phone-glow"></div>
+
+          <div class="hero__phone">
+            <div class="hero__phone-notch"></div>
+            <div class="hero__phone-screen">
+              <!-- Simulated app UI -->
+              <div class="hero__app-ui">
+                <div class="hero__app-header">
+                  <span class="hero__app-greeting">Good morning</span>
+                  <span class="hero__app-title">Find a Barber</span>
+                </div>
+                <div class="hero__app-search">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+                  </svg>
+                  <span>Search nearby...</span>
+                </div>
+                <div class="hero__app-cards">
+                  <div class="hero__app-card">
+                    <div class="hero__app-card-img"></div>
+                    <div class="hero__app-card-info">
+                      <span class="hero__app-card-name">Classic Cuts</span>
+                      <span class="hero__app-card-rating">4.8</span>
+                    </div>
+                  </div>
+                  <div class="hero__app-card">
+                    <div class="hero__app-card-img"></div>
+                    <div class="hero__app-card-info">
+                      <span class="hero__app-card-name">Urban Style</span>
+                      <span class="hero__app-card-rating">4.9</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating elements -->
+          <div class="hero__float hero__float--1">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+          </div>
+          <div class="hero__float hero__float--2">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+              <polyline points="22 4 12 14.01 9 11.01" fill="none" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <div class="hero__float hero__float--3">
+            <span>Booked!</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Problem Section -->
+  <section class="problem" id="problem">
+    <div class="problem__bg">
+      <div class="problem__pattern"></div>
+    </div>
+    <div class="problem__container">
+      <h2 class="section__title">The Problem We're Solving</h2>
+      <p class="section__subtitle">
+        Traditional barber booking is broken for everyone involved
+      </p>
+
+      <div class="problem__grid">
+        <div class="problem__card problem__card--customer">
+          <div class="problem__icon">&#128100;</div>
+          <h3>For Customers</h3>
+          <ul class="problem__list">
+            <li>Phone calls that go unanswered</li>
+            <li>Long waits at peak hours</li>
+            <li>No visibility into barber availability</li>
+            <li>Forgotten appointments without reminders</li>
+          </ul>
+        </div>
+
+        <div class="problem__card problem__card--shop">
+          <div class="problem__icon">&#9986;</div>
+          <h3>For Barber Shops</h3>
+          <ul class="problem__list">
+            <li>Manual scheduling via notebooks or messages</li>
+            <li>High no-show rates causing revenue loss</li>
+            <li>No automated reminder system</li>
+            <li>Difficulty tracking barber schedules</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solution Section -->
+  <section class="solution">
+    <div class="solution__bg">
+      <div class="solution__wave solution__wave--top">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+          <path d="M0,60 C360,120 720,0 1080,60 C1260,90 1380,90 1440,60 L1440,0 L0,0 Z" fill="var(--white)"/>
+        </svg>
+      </div>
+      <div class="solution__wave solution__wave--bottom">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+          <path d="M0,60 C360,0 720,120 1080,60 C1260,30 1380,30 1440,60 L1440,120 L0,120 Z" fill="var(--white)"/>
+        </svg>
+      </div>
+      <div class="solution__particles"></div>
+    </div>
+    <div class="solution__container">
+      <div class="solution__content">
+        <h2 class="section__title">One App. Two Solutions.</h2>
+        <p class="section__subtitle">
+          BarberQueue digitizes the entire booking experience for both customers and shops
+        </p>
+
+        <div class="solution__stats">
+          <div class="solution__stat">
+            <span class="solution__stat-number">&lt;30s</span>
+            <span class="solution__stat-label">Average booking time</span>
+          </div>
+          <div class="solution__stat">
+            <span class="solution__stat-number">0</span>
+            <span class="solution__stat-label">Phone calls needed</span>
+          </div>
+          <div class="solution__stat">
+            <span class="solution__stat-number">Auto</span>
+            <span class="solution__stat-label">Reminders sent</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="features__bg">
+      <div class="features__gradient"></div>
+    </div>
+    <div class="features__container">
+      <h2 class="section__title">Core Features</h2>
+      <p class="section__subtitle">Everything you need to manage bookings efficiently</p>
+
+      <div class="features__tabs">
+        <button class="features__tab features__tab--active" data-tab="customer">
+          For Customers
+        </button>
+        <button class="features__tab" data-tab="shop">
+          For Barber Shops
+        </button>
+      </div>
+
+      <div class="features__content">
+        <!-- Customer Features -->
+        <div class="features__panel features__panel--active" id="panel-customer">
+          <div class="features__grid">
+            <div class="feature-card">
+              <div class="feature-card__icon">&#128269;</div>
+              <h4 class="feature-card__title">Find Nearby Shops</h4>
+              <p class="feature-card__desc">Search barber shops by location with ratings and pricing info</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-card__icon">&#128197;</div>
+              <h4 class="feature-card__title">Real-time Availability</h4>
+              <p class="feature-card__desc">See open time slots and pick your preferred barber</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-card__icon">&#9989;</div>
+              <h4 class="feature-card__title">Instant Booking</h4>
+              <p class="feature-card__desc">Book your appointment in under 30 seconds</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-card__icon">&#128276;</div>
+              <h4 class="feature-card__title">Smart Reminders</h4>
+              <p class="feature-card__desc">Get push notifications before your appointment</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-card__icon">&#128221;</div>
+              <h4 class="feature-card__title">Booking History</h4>
+              <p class="feature-card__desc">Track all your past and upcoming appointments</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-card__icon">&#11088;</div>
+              <h4 class="feature-card__title">Rate & Review</h4>
+              <p class="feature-card__desc">Share feedback and help others find great barbers</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Shop Features -->
+        <div class="features__panel" id="panel-shop">
+          <div class="features__grid">
+            <div class="feature-card">
+              <div class="feature-card__icon">&#127978;</div>
+              <h4 class="feature-card__title">Shop Profile</h4>
+              <p class="feature-card__desc">Showcase your services, pricing, and photos</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-card__icon">&#128197;</div>
+              <h4 class="feature-card__title">Schedule Management</h4>
+              <p class="feature-card__desc">View daily/weekly calendar with all appointments</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-card__icon">&#128101;</div>
+              <h4 class="feature-card__title">Staff Scheduling</h4>
+              <p class="feature-card__desc">Manage individual barber availability and breaks</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-card__icon">&#128276;</div>
+              <h4 class="feature-card__title">Auto Notifications</h4>
+              <p class="feature-card__desc">Automated reminders reduce no-shows significantly</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-card__icon">&#128203;</div>
+              <h4 class="feature-card__title">Customer List</h4>
+              <p class="feature-card__desc">Track customer history and preferences</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-card__icon">&#9940;</div>
+              <h4 class="feature-card__title">Block Time Slots</h4>
+              <p class="feature-card__desc">Easily mark unavailable times for breaks or holidays</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- App Preview Section -->
+  <section class="preview" id="preview">
+    <div class="preview__bg">
+      <div class="preview__blob preview__blob--1"></div>
+      <div class="preview__blob preview__blob--2"></div>
+    </div>
+    <div class="preview__container">
+      <h2 class="section__title">App Preview</h2>
+      <p class="section__subtitle">A glimpse into the BarberQueue experience</p>
+
+      <div class="preview__gallery">
+        <div class="preview__phone">
+          <div class="preview__screen">
+            <div class="preview__placeholder">
+              <span>Search</span>
+              <small>Find shops nearby</small>
+            </div>
+          </div>
+          <p class="preview__label">Discover Shops</p>
+        </div>
+
+        <div class="preview__phone preview__phone--featured">
+          <div class="preview__screen">
+            <div class="preview__placeholder preview__placeholder--featured">
+              <span>Book</span>
+              <small>Select time slot</small>
+            </div>
+          </div>
+          <p class="preview__label">Book Appointment</p>
+        </div>
+
+        <div class="preview__phone">
+          <div class="preview__screen">
+            <div class="preview__placeholder">
+              <span>Manage</span>
+              <small>View schedule</small>
+            </div>
+          </div>
+          <p class="preview__label">Track Bookings</p>
+        </div>
+      </div>
+
+      <p class="preview__note">
+        * Screenshots are placeholders. View full designs in the Design section below.
+      </p>
+    </div>
+  </section>
+
+  <!-- Design Links Section -->
+  <section class="design" id="design">
+    <div class="design__container">
+      <h2 class="section__title">Design Resources</h2>
+      <p class="section__subtitle">Explore the complete design system and case study</p>
+
+      <div class="design__cards">
+        <a href="#" class="design-card" target="_blank" rel="noopener noreferrer">
+          <div class="design-card__icon">
+            <svg viewBox="0 0 38 57" fill="currentColor" width="40" height="40">
+              <path d="M19 28.5a9.5 9.5 0 1 1 0 19 9.5 9.5 0 0 1 0-19z"/>
+              <path d="M0 47.5A9.5 9.5 0 0 0 9.5 57H19V47.5a9.5 9.5 0 0 0-19 0z"/>
+              <path d="M0 28.5A9.5 9.5 0 0 1 9.5 19H19v19H9.5A9.5 9.5 0 0 1 0 28.5z"/>
+              <path d="M0 9.5A9.5 9.5 0 0 0 9.5 19H19V0H9.5A9.5 9.5 0 0 0 0 9.5z"/>
+              <path d="M19 0v19h9.5a9.5 9.5 0 0 0 0-19H19z"/>
+            </svg>
+          </div>
+          <h3 class="design-card__title">Figma Design</h3>
+          <p class="design-card__desc">
+            Complete UI/UX design file with components, screens, and design system
+          </p>
+          <span class="design-card__link">Open in Figma &rarr;</span>
+        </a>
+
+        <a href="#" class="design-card" target="_blank" rel="noopener noreferrer">
+          <div class="design-card__icon design-card__icon--behance">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="40" height="40">
+              <path d="M22 7h-7V5h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14H15.97c.13 3.211 3.483 3.312 4.588 2.029h3.168zm-7.686-4h4.965c-.105-1.547-1.136-2.219-2.477-2.219-1.466 0-2.277.768-2.488 2.219zm-9.574 6.988H0V5.021h6.953c5.476.081 5.58 5.444 2.72 6.906 3.461 1.26 3.577 8.061-3.207 8.061zM3 11h3.584c2.508 0 2.906-3-.312-3H3v3zm3.391 3H3v3.016h3.341c3.055 0 2.868-3.016.05-3.016z"/>
+            </svg>
+          </div>
+          <h3 class="design-card__title">Behance Case Study</h3>
+          <p class="design-card__desc">
+            Full UX case study with research, wireframes, and design rationale
+          </p>
+          <span class="design-card__link">View on Behance &rarr;</span>
+        </a>
+      </div>
+
+      <p class="design__note">
+        <!-- UPDATE: Replace # links above with actual Figma and Behance URLs -->
+        Links will be updated with final design files.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__brand">
+        <span class="footer__logo">&#9986; BarberQueue</span>
+        <p class="footer__tagline">Smart barber booking for everyone</p>
+      </div>
+
+      <div class="footer__links">
+        <a href="#hero">Home</a>
+        <a href="#problem">Problem</a>
+        <a href="#features">Features</a>
+        <a href="#design">Design</a>
+      </div>
+
+      <p class="footer__copy">
+        &copy; 2024 BarberQueue. University Project.
+      </p>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
