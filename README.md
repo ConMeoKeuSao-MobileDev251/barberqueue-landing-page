@@ -69,7 +69,6 @@ Edit `styles/main.css` lines 10-15:
 - Vanilla JavaScript (ES6+)
 - Google Fonts (Inter)
 
-No build step required. Zero dependencies.
 
 ## Browser Support
 
