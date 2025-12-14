@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BarberQueue - Case Study Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============================================
+       SECTION 1: COVER / PROJECT TITLE
+       ============================================ -->
+  <section class="section section--cover">
+    <div class="container">
+      <div class="cover">
+        <p class="cover__category">Mobile App Design / UX Case Study</p>
+        <h1 class="cover__title">BarberQueue</h1>
+        <p class="cover__subtitle">A mobile booking platform connecting customers with local barber shops in Vietnam</p>
+
+        <div class="cover__meta">
+          <div class="cover__meta-item">
+            <span class="cover__meta-label">Role</span>
+            <span class="cover__meta-value">UX/UI Designer</span>
+          </div>
+          <div class="cover__meta-item">
+            <span class="cover__meta-label">Duration</span>
+            <span class="cover__meta-value">8 Weeks</span>
+          </div>
+          <div class="cover__meta-item">
+            <span class="cover__meta-label">Scope</span>
+            <span class="cover__meta-value">MVP / Student Project</span>
+          </div>
+          <div class="cover__meta-item">
+            <span class="cover__meta-label">Tools</span>
+            <span class="cover__meta-value">Figma, FigJam</span>
+          </div>
+        </div>
+      </div>
+
+      <figure class="image-placeholder image-placeholder--hero">
+        <div class="image-placeholder__inner">
+          <span>[Insert Image: Hero mockup showing app on phone with barbershop context]</span>
+        </div>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 2: PROJECT OVERVIEW
+       ============================================ -->
+  <section class="section section--light">
+    <div class="container">
+      <header class="section__header">
+        <h2 class="section__title">Project Overview</h2>
+      </header>
+
+      <div class="content-block">
+        <p class="lead">BarberQueue is a mobile application that digitizes the barbershop booking experience for the Vietnamese market. The platform serves two user groups: customers seeking convenient appointment scheduling, and barbershop owners needing efficient calendar management.</p>
+
+        <div class="overview-grid">
+          <div class="overview-card">
+            <h3>The Challenge</h3>
+            <p>Traditional booking methods (phone calls, walk-ins) create friction for busy customers and operational chaos for barbershops. No localized digital solution exists for the Vietnamese market.</p>
+          </div>
+          <div class="overview-card">
+            <h3>The Solution</h3>
+            <p>A dual-interface mobile app enabling real-time availability viewing, instant booking, automated reminders, and streamlined schedule management for shops.</p>
+          </div>
+          <div class="overview-card">
+            <h3>The Outcome</h3>
+            <p>A functional MVP prototype validated through user testing, demonstrating reduced booking friction and improved shop efficiency through automated notifications.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 3: PROBLEM STATEMENT
+       ============================================ -->
+  <section class="section">
+    <div class="container">
+      <header class="section__header">
+        <h2 class="section__title">Problem Statement</h2>
+        <p class="section__subtitle">Understanding the pain points from both sides of the booking experience</p>
+      </header>
+
+      <div class="problem-grid">
+        <div class="problem-card">
+          <span class="problem-card__icon">Customer Pain Points</span>
+          <ul class="problem-list">
+            <li>Phone calls often go unanswered during busy hours</li>
+            <li>No visibility into barber availability or wait times</li>
+            <li>Long waits during peak hours (evenings, weekends)</li>
+            <li>Forgotten appointments due to lack of reminders</li>
+            <li>Difficulty finding reputable shops with transparent pricing</li>
+          </ul>
+        </div>
+
+        <div class="problem-card">
+          <span class="problem-card__icon">Barbershop Pain Points</span>
+          <ul class="problem-list">
+            <li>Manual scheduling via notebooks or scattered messages</li>
+            <li>High no-show rates causing revenue loss</li>
+            <li>No automated reminder system</li>
+            <li>Difficulty tracking individual barber schedules</li>
+            <li>Limited tools for small/medium shops (1-5 barbers)</li>
+          </ul>
+        </div>
+      </div>
+
+      <figure class="image-placeholder">
+        <div class="image-placeholder__inner">
+          <span>[Insert Image: Problem visualization - split screen showing frustrated customer on phone / messy barbershop schedule book]</span>
+        </div>
+        <figcaption>Current booking methods create friction for both customers and shop owners</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 4: TARGET USERS
+       ============================================ -->
+  <section class="section section--light">
+    <div class="container">
+      <header class="section__header">
+        <h2 class="section__title">Target Users</h2>
+        <p class="section__subtitle">Defining our primary user segments for the Vietnamese urban market</p>
+      </header>
+
+      <div class="persona-grid">
+        <div class="persona-card">
+          <div class="persona-card__header">
+            <div class="persona-card__avatar"></div>
+            <div>
+              <h3 class="persona-card__name">The Busy Professional</h3>
+              <p class="persona-card__demo">Male/Female, 22-40 years old</p>
+            </div>
+          </div>
+          <div class="persona-card__body">
+            <p><strong>Context:</strong> Office workers and young professionals in Hanoi/HCMC with limited free time.</p>
+            <p><strong>Needs:</strong> Quick booking without phone calls, visibility into wait times, appointment reminders.</p>
+            <p><strong>Behavior:</strong> Heavy smartphone users, value convenience over price, prefer planning ahead.</p>
+          </div>
+        </div>
+
+        <div class="persona-card">
+          <div class="persona-card__header">
+            <div class="persona-card__avatar persona-card__avatar--alt"></div>
+            <div>
+              <h3 class="persona-card__name">The Shop Owner</h3>
+              <p class="persona-card__demo">Small/Medium Barbershop (1-5 barbers)</p>
+            </div>
+          </div>
+          <div class="persona-card__body">
+            <p><strong>Context:</strong> Independent barbershop owners managing daily operations manually.</p>
+            <p><strong>Needs:</strong> Simple scheduling tool, reduced no-shows, customer tracking.</p>
+            <p><strong>Behavior:</strong> Limited tech budget, uses smartphone for business, wants low-friction adoption.</p>
+          </div>
+        </div>
+      </div>
+
+      <figure class="image-placeholder">
+        <div class="image-placeholder__inner">
+          <span>[Insert Image: User persona cards with photos and detailed attributes]</span>
+        </div>
+        <figcaption>Primary personas developed from user research</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 5: PRODUCT GOALS & VALUE PROPOSITION
+       ============================================ -->
+  <section class="section">
+    <div class="container">
+      <header class="section__header">
+        <h2 class="section__title">Product Goals & Value Proposition</h2>
+      </header>
+
+      <div class="goals-content">
+        <div class="value-prop">
+          <h3>Core Value Proposition</h3>
+          <p class="value-prop__statement">"Book your haircut in under 30 seconds. No calls. No waiting."</p>
+        </div>
+
+        <div class="goals-grid">
+          <div class="goal-card">
+            <span class="goal-card__number">01</span>
+            <h4>Reduce Booking Friction</h4>
+            <p>Enable instant appointment booking without phone calls, with real-time availability visibility.</p>
+          </div>
+          <div class="goal-card">
+            <span class="goal-card__number">02</span>
+            <h4>Minimize No-Shows</h4>
+            <p>Automated push notifications 1 hour before appointments to reduce missed bookings.</p>
+          </div>
+          <div class="goal-card">
+            <span class="goal-card__number">03</span>
+            <h4>Simplify Shop Management</h4>
+            <p>Provide barbershops with an intuitive calendar interface for schedule and staff management.</p>
+          </div>
+          <div class="goal-card">
+            <span class="goal-card__number">04</span>
+            <h4>Local Market Focus</h4>
+            <p>Vietnamese language support and features designed for local shop operations.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="metrics-block">
+        <h3>Success Metrics</h3>
+        <div class="metrics-grid">
+          <div class="metric">
+            <span class="metric__value">&lt;30s</span>
+            <span class="metric__label">Target booking time</span>
+          </div>
+          <div class="metric">
+            <span class="metric__value">-50%</span>
+            <span class="metric__label">No-show rate reduction</span>
+          </div>
+          <div class="metric">
+            <span class="metric__value">4.5+</span>
+            <span class="metric__label">User satisfaction rating</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 6: DESIGN PROCESS
+       ============================================ -->
+  <section class="section section--light">
+    <div class="container">
+      <header class="section__header">
+        <h2 class="section__title">Design Process</h2>
+        <p class="section__subtitle">A lean, iterative approach suited for MVP development</p>
+      </header>
+
+      <div class="process-timeline">
+        <div class="process-step">
+          <div class="process-step__marker">1</div>
+          <div class="process-step__content">
+            <h4>Research & Discovery</h4>
+            <p>Conducted informal interviews with 15+ barbershop customers and 5 shop owners. Analyzed existing solutions (Booksy, StyleSeat, local Facebook booking).</p>
+            <span class="process-step__duration">Week 1-2</span>
+          </div>
+        </div>
+
+        <div class="process-step">
+          <div class="process-step__marker">2</div>
+          <div class="process-step__content">
+            <h4>Problem Definition</h4>
+            <p>Synthesized research into user personas, journey maps, and prioritized pain points. Defined MVP scope focusing on core booking flow.</p>
+            <span class="process-step__duration">Week 2-3</span>
+          </div>
+        </div>
+
+        <div class="process-step">
+          <div class="process-step__marker">3</div>
+          <div class="process-step__content">
+            <h4>Ideation & Wireframing</h4>
+            <p>Sketched multiple concepts for key screens. Created low-fidelity wireframes for customer and shop owner flows.</p>
+            <span class="process-step__duration">Week 3-4</span>
+          </div>
+        </div>
+
+        <div class="process-step">
+          <div class="process-step__marker">4</div>
+          <div class="process-step__content">
+            <h4>Visual Design</h4>
+            <p>Developed visual system (color, typography, components). Created high-fidelity mockups for all MVP screens.</p>
+            <span class="process-step__duration">Week 5-6</span>
+          </div>
+        </div>
+
+        <div class="process-step">
+          <div class="process-step__marker">5</div>
+          <div class="process-step__content">
+            <h4>Prototyping & Testing</h4>
+            <p>Built interactive Figma prototype. Conducted usability testing with 8 participants. Iterated based on feedback.</p>
+            <span class="process-step__duration">Week 7-8</span>
+          </div>
+        </div>
+      </div>
+
+      <figure class="image-placeholder">
+        <div class="image-placeholder__inner">
+          <span>[Insert Image: Design process artifacts - sticky notes, sketches, wireframes collage]</span>
+        </div>
+        <figcaption>Artifacts from the research and ideation phases</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 7: VISUAL SYSTEM
+       ============================================ -->
+  <section class="section">
+    <div class="container">
+      <header class="section__header">
+        <h2 class="section__title">Visual System</h2>
+        <p class="section__subtitle">A warm, energetic design language reflecting the barbershop experience</p>
+      </header>
+
+      <!-- 7.1 Color Palette -->
+      <div class="visual-subsection">
+        <h3>Color Palette</h3>
+        <p>Orange conveys energy and approachability, while dark tones provide sophistication and readability. The palette balances warmth with professionalism.</p>
+
+        <div class="color-grid">
+          <div class="color-swatch" style="--swatch-color: #FF6B35;">
+            <div class="color-swatch__preview"></div>
+            <div class="color-swatch__info">
+              <span class="color-swatch__name">Primary Orange</span>
+              <span class="color-swatch__value">#FF6B35</span>
+            </div>
+          </div>
+          <div class="color-swatch" style="--swatch-color: #F7931E;">
+            <div class="color-swatch__preview"></div>
+            <div class="color-swatch__info">
+              <span class="color-swatch__name">Secondary Orange</span>
+              <span class="color-swatch__value">#F7931E</span>
+            </div>
+          </div>
+          <div class="color-swatch" style="--swatch-color: #1A1A1A;">
+            <div class="color-swatch__preview"></div>
+            <div class="color-swatch__info">
+              <span class="color-swatch__name">Dark</span>
+              <span class="color-swatch__value">#1A1A1A</span>
+            </div>
+          </div>
+          <div class="color-swatch" style="--swatch-color: #FFF3E6;">
+            <div class="color-swatch__preview"></div>
+            <div class="color-swatch__info">
+              <span class="color-swatch__name">Light Orange</span>
+              <span class="color-swatch__value">#FFF3E6</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7.2 Typography -->
+      <div class="visual-subsection">
+        <h3>Typography</h3>
+        <p>Inter provides excellent readability across screen sizes with a modern, neutral character that doesn't compete with content.</p>
+
+        <div class="typography-showcase">
+          <div class="type-sample">
+            <span class="type-sample__label">Heading 1</span>
+            <span class="type-sample__preview" style="font-size: 32px; font-weight: 700;">Find a Barber</span>
+          </div>
+          <div class="type-sample">
+            <span class="type-sample__label">Heading 2</span>
+            <span class="type-sample__preview" style="font-size: 24px; font-weight: 600;">Select Time Slot</span>
+          </div>
+          <div class="type-sample">
+            <span class="type-sample__label">Body</span>
+            <span class="type-sample__preview" style="font-size: 16px; font-weight: 400;">Book your appointment in seconds.</span>
+          </div>
+          <div class="type-sample">
+            <span class="type-sample__label">Caption</span>
+            <span class="type-sample__preview" style="font-size: 14px; font-weight: 400; color: #666;">Available slots shown in orange</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7.3 Design Principles -->
+      <div class="visual-subsection">
+        <h3>Design Principles</h3>
+
+        <div class="principles-grid">
+          <div class="principle-card">
+            <h4>Clarity First</h4>
+            <p>Every screen answers one question. Information hierarchy guides users through booking without confusion.</p>
+          </div>
+          <div class="principle-card">
+            <h4>Speed Over Polish</h4>
+            <p>Minimal taps to complete core actions. Visual flourishes never slow down the experience.</p>
+          </div>
+          <div class="principle-card">
+            <h4>Trust Through Transparency</h4>
+            <p>Prices, availability, and ratings visible upfront. No hidden information or surprise fees.</p>
+          </div>
+        </div>
+      </div>
+
+      <figure class="image-placeholder">
+        <div class="image-placeholder__inner">
+          <span>[Insert Image: Component library showing buttons, cards, inputs, icons]</span>
+        </div>
+        <figcaption>Core UI components from the design system</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 8: KEY SCREENS
+       ============================================ -->
+  <section class="section section--dark">
+    <div class="container">
+      <header class="section__header">
+        <h2 class="section__title">Key Screens</h2>
+        <p class="section__subtitle">Walkthrough of the core user flows</p>
+      </header>
+
+      <!-- 8.1 Booking Flow -->
+      <div class="screens-subsection">
+        <h3>Booking Flow</h3>
+        <p>The customer journey from shop discovery to confirmed appointment.</p>
+
+        <figure class="image-placeholder image-placeholder--screens">
+          <div class="image-placeholder__inner">
+            <span>[Insert Image: 4-5 phone screens showing: Home/Search → Shop Details → Service Selection → Time Picker → Confirmation]</span>
+          </div>
+          <figcaption>Complete booking flow: Search → Select → Confirm</figcaption>
+        </figure>
+
+        <div class="screen-annotations">
+          <div class="annotation">
+            <span class="annotation__num">1</span>
+            <p><strong>Home/Search:</strong> Location-based shop discovery with distance sorting. Search filters by rating, price, availability.</p>
+          </div>
+          <div class="annotation">
+            <span class="annotation__num">2</span>
+            <p><strong>Shop Details:</strong> Photos, services, pricing, reviews. Barber profiles with individual availability.</p>
+          </div>
+          <div class="annotation">
+            <span class="annotation__num">3</span>
+            <p><strong>Service & Time:</strong> Service selection with pricing. Calendar with 30-minute slots. Real-time availability.</p>
+          </div>
+          <div class="annotation">
+            <span class="annotation__num">4</span>
+            <p><strong>Confirmation:</strong> Summary review. Optional discount code. Clear cancellation policy warning.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8.2 Barber Selection -->
+      <div class="screens-subsection">
+        <h3>Barber Selection</h3>
+        <p>Choosing a specific barber based on portfolio and availability.</p>
+
+        <figure class="image-placeholder image-placeholder--screens">
+          <div class="image-placeholder__inner">
+            <span>[Insert Image: 3 screens showing: Barber List → Barber Profile → Availability Calendar]</span>
+          </div>
+          <figcaption>Barber selection with profile and portfolio viewing</figcaption>
+        </figure>
+
+        <div class="screen-annotations">
+          <div class="annotation">
+            <span class="annotation__num">1</span>
+            <p><strong>Barber List:</strong> All barbers at selected shop with ratings, specialties, next available slot.</p>
+          </div>
+          <div class="annotation">
+            <span class="annotation__num">2</span>
+            <p><strong>Profile:</strong> Photo gallery of past work. Customer reviews. Years of experience.</p>
+          </div>
+          <div class="annotation">
+            <span class="annotation__num">3</span>
+            <p><strong>Calendar:</strong> Week view with available/blocked slots. Orange indicates open times.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8.3 Schedule Management -->
+      <div class="screens-subsection">
+        <h3>Schedule Management (Shop Owner)</h3>
+        <p>Tools for barbershop staff to manage daily operations.</p>
+
+        <figure class="image-placeholder image-placeholder--screens">
+          <div class="image-placeholder__inner">
+            <span>[Insert Image: 3 screens showing: Daily Calendar → Appointment Detail → Block Time Modal]</span>
+          </div>
+          <figcaption>Shop owner dashboard for schedule management</figcaption>
+        </figure>
+
+        <div class="screen-annotations">
+          <div class="annotation">
+            <span class="annotation__num">1</span>
+            <p><strong>Daily View:</strong> All appointments for selected date. Color-coded by barber. Quick status indicators.</p>
+          </div>
+          <div class="annotation">
+            <span class="annotation__num">2</span>
+            <p><strong>Appointment Detail:</strong> Customer info, service, time. Options to confirm, reschedule, or cancel.</p>
+          </div>
+          <div class="annotation">
+            <span class="annotation__num">3</span>
+            <p><strong>Block Time:</strong> Manually block slots for walk-ins or breaks. Syncs to customer app instantly.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 9: INTERACTIVE PROTOTYPE
+       ============================================ -->
+  <section class="section">
+    <div class="container">
+      <header class="section__header">
+        <h2 class="section__title">Interactive Prototype</h2>
+        <p class="section__subtitle">Experience the core booking flow</p>
+      </header>
+
+      <div class="prototype-block">
+        <figure class="image-placeholder image-placeholder--prototype">
+          <div class="image-placeholder__inner">
+            <span>[Insert: Figma Embed or Prototype Recording GIF]</span>
+            <p style="margin-top: 16px; font-size: 14px;">Click to interact with the prototype</p>
+          </div>
+        </figure>
+
+        <div class="prototype-links">
+          <p>View the full interactive prototype:</p>
+          <a href="#" class="prototype-link">[Insert Figma Prototype Link]</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 10: OUTCOME & REFLECTION
+       ============================================ -->
+  <section class="section section--light">
+    <div class="container">
+      <header class="section__header">
+        <h2 class="section__title">Outcome & Reflection</h2>
+      </header>
+
+      <div class="outcome-content">
+        <div class="outcome-section">
+          <h3>What Was Achieved</h3>
+          <ul class="outcome-list">
+            <li>Completed MVP design covering both customer and shop owner interfaces</li>
+            <li>Validated core booking flow through usability testing (8 participants, 85% task completion)</li>
+            <li>Established scalable design system for future feature expansion</li>
+            <li>Created comprehensive Figma prototype demonstrating full user journey</li>
+          </ul>
+        </div>
+
+        <div class="outcome-section">
+          <h3>Key Learnings</h3>
+          <ul class="outcome-list">
+            <li><strong>Scope discipline matters:</strong> Focusing on core booking prevented feature creep in an 8-week timeline</li>
+            <li><strong>Two-sided platforms are complex:</strong> Balancing customer simplicity with shop flexibility required careful trade-offs</li>
+            <li><strong>Local context is critical:</strong> Vietnamese market assumptions (cash preference, walk-in culture) shaped key design decisions</li>
+          </ul>
+        </div>
+
+        <div class="outcome-section">
+          <h3>Future Opportunities</h3>
+          <ul class="outcome-list">
+            <li>Payment integration (MoMo, bank transfer) for prepaid bookings</li>
+            <li>Review and rating system with photo uploads</li>
+            <li>Loyalty program and promotional features</li>
+            <li>Analytics dashboard for shop owners</li>
+          </ul>
+        </div>
+
+        <div class="outcome-section">
+          <h3>Constraints & Limitations</h3>
+          <p>As a student project, this case study has inherent limitations:</p>
+          <ul class="outcome-list outcome-list--muted">
+            <li>User research sample size was limited (20 participants)</li>
+            <li>No production implementation or real-world metrics</li>
+            <li>Payment and notification systems designed but not functional</li>
+            <li>Market validation limited to Hanoi/HCMC urban areas</li>
+          </ul>
+        </div>
+      </div>
+
+      <figure class="image-placeholder">
+        <div class="image-placeholder__inner">
+          <span>[Insert Image: Final hero shot - multiple screens arranged showing the complete product]</span>
+        </div>
+        <figcaption>BarberQueue MVP - Complete screen collection</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text">BarberQueue Case Study</p>
+      <p class="footer__meta">University Project - 2024</p>
+    </div>
+  </footer>
+
+</body>
+</html>
