@@ -31,11 +31,10 @@
 
   <!-- Hero Section -->
   <header class="hero" id="hero">
-    <!-- Decorative background elements -->
+    <!-- Background image with overlay -->
     <div class="hero__bg">
-      <div class="hero__blob hero__blob--1"></div>
-      <div class="hero__blob hero__blob--2"></div>
-      <div class="hero__grid-pattern"></div>
+      <div class="hero__bg-image" style="background-image: url('assets/images/barbershop-background.png');"></div>
+      <div class="hero__bg-overlay"></div>
     </div>
 
     <div class="hero__container">
@@ -97,39 +96,7 @@
           <div class="hero__phone">
             <div class="hero__phone-notch"></div>
             <div class="hero__phone-screen">
-              <!-- Simulated app UI -->
-              <div class="hero__app-ui">
-                <div class="hero__app-header">
-                  <div class="hero__app-brand">
-                    <img src="assets/logo_notext.svg" alt="" class="hero__app-logo">
-                    <span class="hero__app-name">BarberQueue</span>
-                  </div>
-                  <span class="hero__app-greeting">Good morning</span>
-                  <span class="hero__app-title">Find a Barber</span>
-                </div>
-                <div class="hero__app-search">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
-                  </svg>
-                  <span>Search nearby...</span>
-                </div>
-                <div class="hero__app-cards">
-                  <div class="hero__app-card">
-                    <div class="hero__app-card-img"></div>
-                    <div class="hero__app-card-info">
-                      <span class="hero__app-card-name">Classic Cuts</span>
-                      <span class="hero__app-card-rating">4.8</span>
-                    </div>
-                  </div>
-                  <div class="hero__app-card">
-                    <div class="hero__app-card-img"></div>
-                    <div class="hero__app-card-info">
-                      <span class="hero__app-card-name">Urban Style</span>
-                      <span class="hero__app-card-rating">4.9</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <img src="assets/screenshots/home_screen.png" alt="BarberQueue Home Screen" class="hero__phone-screenshot">
             </div>
           </div>
 
@@ -330,37 +297,28 @@
       <div class="preview__gallery">
         <div class="preview__phone">
           <div class="preview__screen">
-            <div class="preview__placeholder">
-              <span>Search</span>
-              <small>Find shops nearby</small>
-            </div>
+            <img src="assets/screenshots/login_screen.png" alt="Login Screen" class="preview__screenshot">
           </div>
-          <p class="preview__label">Discover Shops</p>
+          <p class="preview__label">Quick Login</p>
         </div>
 
         <div class="preview__phone preview__phone--featured">
           <div class="preview__screen">
-            <div class="preview__placeholder preview__placeholder--featured">
-              <span>Book</span>
-              <small>Select time slot</small>
-            </div>
+            <img src="assets/screenshots/shop_details.png" alt="Shop Details" class="preview__screenshot">
           </div>
-          <p class="preview__label">Book Appointment</p>
+          <p class="preview__label">Shop Details</p>
         </div>
 
         <div class="preview__phone">
           <div class="preview__screen">
-            <div class="preview__placeholder">
-              <span>Manage</span>
-              <small>View schedule</small>
-            </div>
+            <img src="assets/screenshots/home_screen.png" alt="Home Screen" class="preview__screenshot">
           </div>
-          <p class="preview__label">Track Bookings</p>
+          <p class="preview__label">Browse Shops</p>
         </div>
       </div>
 
       <p class="preview__note">
-        * Screenshots are placeholders. View full designs in the Design section below.
+        Explore the full design in the interactive prototype below.
       </p>
     </div>
   </section>
@@ -371,8 +329,22 @@
       <h2 class="section__title">Design Resources</h2>
       <p class="section__subtitle">Explore the complete design system and case study</p>
 
+      <!-- Figma Prototype Embed -->
+      <div class="design__prototype">
+        <h3 class="design__prototype-title">Interactive Prototype</h3>
+        <div class="design__prototype-wrapper">
+          <iframe
+            style="border: 1px solid rgba(0, 0, 0, 0.1);"
+            width="100%"
+            height="500"
+            src="https://embed.figma.com/proto/Rsqjz1t4QDmF2DXvJxC5Mb/BARBERQUEUE-UI-DESIGN?node-id=2674-5571&p=f&scaling=min-zoom&content-scaling=fixed&page-id=439%3A8833&starting-point-node-id=439%3A17479&embed-host=share"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+
       <div class="design__cards">
-        <a href="#" class="design-card" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.figma.com/design/Rsqjz1t4QDmF2DXvJxC5Mb/BARBERQUEUE-UI-DESIGN?node-id=439-8833&t=RLkQkSLPujvmvxU8-1" class="design-card" target="_blank" rel="noopener noreferrer">
           <div class="design-card__icon">
             <svg viewBox="0 0 38 57" fill="currentColor" width="40" height="40">
               <path d="M19 28.5a9.5 9.5 0 1 1 0 19 9.5 9.5 0 0 1 0-19z"/>
@@ -389,7 +361,7 @@
           <span class="design-card__link">Open in Figma &rarr;</span>
         </a>
 
-        <a href="#" class="design-card" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.behance.net/gallery/240481995/BarberQueue" class="design-card" target="_blank" rel="noopener noreferrer">
           <div class="design-card__icon design-card__icon--behance">
             <svg viewBox="0 0 24 24" fill="currentColor" width="40" height="40">
               <path d="M22 7h-7V5h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14H15.97c.13 3.211 3.483 3.312 4.588 2.029h3.168zm-7.686-4h4.965c-.105-1.547-1.136-2.219-2.477-2.219-1.466 0-2.277.768-2.488 2.219zm-9.574 6.988H0V5.021h6.953c5.476.081 5.58 5.444 2.72 6.906 3.461 1.26 3.577 8.061-3.207 8.061zM3 11h3.584c2.508 0 2.906-3-.312-3H3v3zm3.391 3H3v3.016h3.341c3.055 0 2.868-3.016.05-3.016z"/>
@@ -402,11 +374,6 @@
           <span class="design-card__link">View on Behance &rarr;</span>
         </a>
       </div>
-
-      <p class="design__note">
-        <!-- UPDATE: Replace # links above with actual Figma and Behance URLs -->
-        Links will be updated with final design files.
-      </p>
     </div>
   </section>
 
@@ -429,7 +396,7 @@
       </div>
 
       <p class="footer__copy">
-        &copy; 2024 BarberQueue. University Project.
+        &copy; 2024 BarberQueue. UX/UI Case Study.
       </p>
     </div>
   </footer>
