@@ -5,14 +5,14 @@
 
 /* CSS Variables */
 :root {
-  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
 
   /* BarberQueue brand palette */
   --color-primary: #FF6B35;
   --color-secondary: #F7931E;
   --color-text: #1a1a1a;
-  --color-text-muted: #666666;
-  --color-text-light: #999999;
+  --color-text-muted: #555555;
+  --color-text-light: #888888;
   --color-bg: #ffffff;
   --color-bg-light: #FFF3E6;
   --color-bg-warm: #FFF8F3;
@@ -24,16 +24,16 @@
   --color-accent-light: #FFF3E6;
 
   /* Spacing */
-  --space-xs: 8px;
-  --space-sm: 16px;
-  --space-md: 24px;
-  --space-lg: 48px;
-  --space-xl: 80px;
-  --space-2xl: 120px;
+  --space-xs: 10px;
+  --space-sm: 20px;
+  --space-md: 32px;
+  --space-lg: 56px;
+  --space-xl: 96px;
+  --space-2xl: 140px;
 
   /* Layout */
-  --max-width: 900px;
-  --max-width-narrow: 700px;
+  --max-width: 1000px;
+  --max-width-narrow: 800px;
 }
 
 /* Reset */
@@ -49,8 +49,8 @@ html {
 
 body {
   font-family: var(--font-family);
-  font-size: 17px;
-  line-height: 1.7;
+  font-size: 20px;
+  line-height: 1.8;
   color: var(--color-text);
   background: var(--color-bg-warm);
   -webkit-font-smoothing: antialiased;
@@ -112,7 +112,7 @@ li {
 }
 
 .section__title {
-  font-size: 32px;
+  font-size: 42px;
   font-weight: 700;
   margin-bottom: var(--space-xs);
   letter-spacing: -0.02em;
@@ -120,9 +120,9 @@ li {
 }
 
 .section__subtitle {
-  font-size: 18px;
+  font-size: 22px;
   color: var(--color-text-muted);
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto;
 }
 
@@ -130,7 +130,7 @@ li {
    Typography
    ============================================ */
 h3 {
-  font-size: 22px;
+  font-size: 28px;
   font-weight: 600;
   margin-bottom: var(--space-sm);
   letter-spacing: -0.01em;
@@ -138,7 +138,7 @@ h3 {
 }
 
 h4 {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 600;
   margin-bottom: var(--space-xs);
   color: var(--color-primary);
@@ -153,8 +153,8 @@ p:last-child {
 }
 
 .lead {
-  font-size: 20px;
-  line-height: 1.6;
+  font-size: 24px;
+  line-height: 1.7;
   color: var(--color-text-muted);
   max-width: var(--max-width-narrow);
   margin: 0 auto var(--space-lg);
@@ -184,7 +184,7 @@ p:last-child {
 }
 
 .cover__title {
-  font-size: clamp(48px, 8vw, 72px);
+  font-size: clamp(56px, 10vw, 84px);
   font-weight: 700;
   letter-spacing: -0.03em;
   margin-bottom: var(--space-sm);
@@ -192,9 +192,9 @@ p:last-child {
 }
 
 .cover__subtitle {
-  font-size: 20px;
+  font-size: 24px;
   color: var(--color-text-muted);
-  max-width: 500px;
+  max-width: 600px;
   margin: 0 auto var(--space-lg);
 }
 
@@ -222,6 +222,87 @@ p:last-child {
 .cover__meta-value {
   font-size: 15px;
   font-weight: 500;
+}
+
+/* ============================================
+   Image Showcase (Real Images)
+   ============================================ */
+.image-showcase {
+  margin: var(--space-lg) 0;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.image-showcase__img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-showcase--hero {
+  margin-top: var(--space-xl);
+  border-radius: 0;
+  box-shadow: none;
+  overflow: visible;
+}
+
+.image-showcase--hero .image-showcase__img {
+  max-height: none;
+  object-fit: contain;
+}
+
+.image-showcase--full {
+  border-radius: 0;
+  box-shadow: none;
+  margin: var(--space-lg) calc(-1 * var(--space-md));
+  width: calc(100% + 2 * var(--space-md));
+}
+
+.image-showcase--components {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-md);
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.image-showcase--components .image-showcase__img {
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Screenshot Gallery */
+.screenshot-gallery {
+  display: flex;
+  gap: var(--space-md);
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: var(--space-lg) 0;
+}
+
+.screenshot-gallery__item {
+  width: 180px;
+  flex-shrink: 0;
+}
+
+.screenshot-gallery__phone {
+  background: linear-gradient(145deg, #2a2a2a 0%, #1a1a1a 100%);
+  border-radius: 28px;
+  padding: 8px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.screenshot-gallery__screen {
+  border-radius: 22px;
+  overflow: hidden;
+  background: var(--color-bg-light);
+}
+
+.screenshot-gallery__img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* ============================================
@@ -426,8 +507,8 @@ figcaption {
 }
 
 .persona-card__avatar {
-  width: 56px;
-  height: 56px;
+  width: 72px;
+  height: 72px;
   background: var(--color-border);
   border-radius: 50%;
 }
@@ -436,14 +517,22 @@ figcaption {
   background: var(--color-text-muted);
 }
 
+.persona-card__avatar-img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--color-primary);
+}
+
 .persona-card__name {
-  font-size: 18px;
-  margin-bottom: 2px;
+  font-size: 22px;
+  margin-bottom: 4px;
   color: var(--color-primary);
 }
 
 .persona-card__demo {
-  font-size: 14px;
+  font-size: 16px;
   color: var(--color-text-muted);
   margin: 0;
 }
@@ -819,8 +908,24 @@ figcaption {
     --space-2xl: 80px;
   }
 
+  body {
+    font-size: 18px;
+  }
+
   .section__title {
-    font-size: 28px;
+    font-size: 32px;
+  }
+
+  .section__subtitle {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 20px;
   }
 
   .overview-grid,

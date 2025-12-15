@@ -6,7 +6,7 @@
   <title>BarberQueue - Case Study Demo</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -41,10 +41,8 @@
         </div>
       </div>
 
-      <figure class="image-placeholder image-placeholder--hero">
-        <div class="image-placeholder__inner">
-          <span>[Insert Image: Hero mockup showing app on phone with barbershop context]</span>
-        </div>
+      <figure class="image-showcase image-showcase--hero">
+        <img src="../assets/images/barbershop-background.png" alt="BarberQueue app in barbershop context" class="image-showcase__img">
       </figure>
     </div>
   </section>
@@ -113,10 +111,8 @@
         </div>
       </div>
 
-      <figure class="image-placeholder">
-        <div class="image-placeholder__inner">
-          <span>[Insert Image: Problem visualization - split screen showing frustrated customer on phone / messy barbershop schedule book]</span>
-        </div>
+      <figure class="image-showcase">
+        <img src="../assets/images/split_screen_customer.png" alt="Problem visualization - frustrated customer and shop owner" class="image-showcase__img">
         <figcaption>Current booking methods create friction for both customers and shop owners</figcaption>
       </figure>
     </div>
@@ -135,7 +131,7 @@
       <div class="persona-grid">
         <div class="persona-card">
           <div class="persona-card__header">
-            <div class="persona-card__avatar"></div>
+            <img src="../assets/images/customer-avatar.png" alt="Customer persona" class="persona-card__avatar-img">
             <div>
               <h3 class="persona-card__name">The Busy Professional</h3>
               <p class="persona-card__demo">Male/Female, 22-40 years old</p>
@@ -150,7 +146,7 @@
 
         <div class="persona-card">
           <div class="persona-card__header">
-            <div class="persona-card__avatar persona-card__avatar--alt"></div>
+            <img src="../assets/images/barber-avatar.png" alt="Barber persona" class="persona-card__avatar-img">
             <div>
               <h3 class="persona-card__name">The Shop Owner</h3>
               <p class="persona-card__demo">Small/Medium Barbershop (1-5 barbers)</p>
@@ -164,12 +160,6 @@
         </div>
       </div>
 
-      <figure class="image-placeholder">
-        <div class="image-placeholder__inner">
-          <span>[Insert Image: User persona cards with photos and detailed attributes]</span>
-        </div>
-        <figcaption>Primary personas developed from user research</figcaption>
-      </figure>
     </div>
   </section>
 
@@ -288,13 +278,6 @@
           </div>
         </div>
       </div>
-
-      <figure class="image-placeholder">
-        <div class="image-placeholder__inner">
-          <span>[Insert Image: Design process artifacts - sticky notes, sketches, wireframes collage]</span>
-        </div>
-        <figcaption>Artifacts from the research and ideation phases</figcaption>
-      </figure>
     </div>
   </section>
 
@@ -348,24 +331,24 @@
       <!-- 7.2 Typography -->
       <div class="visual-subsection">
         <h3>Typography</h3>
-        <p>Inter provides excellent readability across screen sizes with a modern, neutral character that doesn't compete with content.</p>
+        <p>Montserrat provides a modern, geometric aesthetic with excellent readability across screen sizes. Its versatile weight range enables clear hierarchy.</p>
 
         <div class="typography-showcase">
           <div class="type-sample">
             <span class="type-sample__label">Heading 1</span>
-            <span class="type-sample__preview" style="font-size: 32px; font-weight: 700;">Find a Barber</span>
+            <span class="type-sample__preview" style="font-size: 36px; font-weight: 700;">Find a Barber</span>
           </div>
           <div class="type-sample">
             <span class="type-sample__label">Heading 2</span>
-            <span class="type-sample__preview" style="font-size: 24px; font-weight: 600;">Select Time Slot</span>
+            <span class="type-sample__preview" style="font-size: 28px; font-weight: 600;">Select Time Slot</span>
           </div>
           <div class="type-sample">
             <span class="type-sample__label">Body</span>
-            <span class="type-sample__preview" style="font-size: 16px; font-weight: 400;">Book your appointment in seconds.</span>
+            <span class="type-sample__preview" style="font-size: 18px; font-weight: 400;">Book your appointment in seconds.</span>
           </div>
           <div class="type-sample">
             <span class="type-sample__label">Caption</span>
-            <span class="type-sample__preview" style="font-size: 14px; font-weight: 400; color: #666;">Available slots shown in orange</span>
+            <span class="type-sample__preview" style="font-size: 16px; font-weight: 400; color: #666;">Available slots shown in orange</span>
           </div>
         </div>
       </div>
@@ -390,12 +373,11 @@
         </div>
       </div>
 
-      <figure class="image-placeholder">
-        <div class="image-placeholder__inner">
-          <span>[Insert Image: Component library showing buttons, cards, inputs, icons]</span>
-        </div>
-        <figcaption>Core UI components from the design system</figcaption>
+      <figure class="image-showcase image-showcase--components">
+        <img src="../assets/images/buttons.png" alt="Button components" class="image-showcase__img">
+        <img src="../assets/images/icons.png" alt="Icon set" class="image-showcase__img">
       </figure>
+      <figcaption style="text-align: center; margin-top: var(--space-sm); font-size: 16px; color: var(--color-text-muted); font-style: italic;">Core UI components from the design system</figcaption>
     </div>
   </section>
 
@@ -414,12 +396,30 @@
         <h3>Booking Flow</h3>
         <p>The customer journey from shop discovery to confirmed appointment.</p>
 
-        <figure class="image-placeholder image-placeholder--screens">
-          <div class="image-placeholder__inner">
-            <span>[Insert Image: 4-5 phone screens showing: Home/Search → Shop Details → Service Selection → Time Picker → Confirmation]</span>
+        <div class="screenshot-gallery">
+          <div class="screenshot-gallery__item">
+            <div class="screenshot-gallery__phone">
+              <div class="screenshot-gallery__screen">
+                <img src="../assets/screenshots/home_screen.png" alt="Home Screen" class="screenshot-gallery__img">
+              </div>
+            </div>
           </div>
-          <figcaption>Complete booking flow: Search → Select → Confirm</figcaption>
-        </figure>
+          <div class="screenshot-gallery__item">
+            <div class="screenshot-gallery__phone">
+              <div class="screenshot-gallery__screen">
+                <img src="../assets/screenshots/shop_details.png" alt="Shop Details" class="screenshot-gallery__img">
+              </div>
+            </div>
+          </div>
+          <div class="screenshot-gallery__item">
+            <div class="screenshot-gallery__phone">
+              <div class="screenshot-gallery__screen">
+                <img src="../assets/screenshots/booking.png" alt="Booking" class="screenshot-gallery__img">
+              </div>
+            </div>
+          </div>
+        </div>
+        <figcaption style="text-align: center; color: rgba(255,255,255,0.7); font-style: italic; margin-bottom: var(--space-lg);">Complete booking flow: Search → Select → Confirm</figcaption>
 
         <div class="screen-annotations">
           <div class="annotation">
@@ -432,11 +432,7 @@
           </div>
           <div class="annotation">
             <span class="annotation__num">3</span>
-            <p><strong>Service & Time:</strong> Service selection with pricing. Calendar with 30-minute slots. Real-time availability.</p>
-          </div>
-          <div class="annotation">
-            <span class="annotation__num">4</span>
-            <p><strong>Confirmation:</strong> Summary review. Optional discount code. Clear cancellation policy warning.</p>
+            <p><strong>Booking:</strong> Service selection with pricing. Calendar with 30-minute slots. Confirmation summary.</p>
           </div>
         </div>
       </div>
@@ -446,40 +442,65 @@
         <h3>Barber Selection</h3>
         <p>Choosing a specific barber based on portfolio and availability.</p>
 
-        <figure class="image-placeholder image-placeholder--screens">
-          <div class="image-placeholder__inner">
-            <span>[Insert Image: 3 screens showing: Barber List → Barber Profile → Availability Calendar]</span>
+        <div class="screenshot-gallery">
+          <div class="screenshot-gallery__item">
+            <div class="screenshot-gallery__phone">
+              <div class="screenshot-gallery__screen">
+                <img src="../assets/screenshots/shop_details.png" alt="Shop with Barbers" class="screenshot-gallery__img">
+              </div>
+            </div>
           </div>
-          <figcaption>Barber selection with profile and portfolio viewing</figcaption>
-        </figure>
+          <div class="screenshot-gallery__item">
+            <div class="screenshot-gallery__phone">
+              <div class="screenshot-gallery__screen">
+                <img src="../assets/screenshots/booking.png" alt="Availability Calendar" class="screenshot-gallery__img">
+              </div>
+            </div>
+          </div>
+        </div>
+        <figcaption style="text-align: center; color: rgba(255,255,255,0.7); font-style: italic; margin-bottom: var(--space-lg);">Barber selection with profile and availability viewing</figcaption>
 
         <div class="screen-annotations">
           <div class="annotation">
             <span class="annotation__num">1</span>
-            <p><strong>Barber List:</strong> All barbers at selected shop with ratings, specialties, next available slot.</p>
+            <p><strong>Shop & Barbers:</strong> All barbers at selected shop with ratings, specialties, next available slot.</p>
           </div>
           <div class="annotation">
             <span class="annotation__num">2</span>
-            <p><strong>Profile:</strong> Photo gallery of past work. Customer reviews. Years of experience.</p>
-          </div>
-          <div class="annotation">
-            <span class="annotation__num">3</span>
             <p><strong>Calendar:</strong> Week view with available/blocked slots. Orange indicates open times.</p>
           </div>
         </div>
       </div>
 
-      <!-- 8.3 Schedule Management -->
+      <!-- 8.3 Schedule Management (Shop Owner) - TEMPORARILY HIDDEN
       <div class="screens-subsection">
         <h3>Schedule Management (Shop Owner)</h3>
         <p>Tools for barbershop staff to manage daily operations.</p>
 
-        <figure class="image-placeholder image-placeholder--screens">
-          <div class="image-placeholder__inner">
-            <span>[Insert Image: 3 screens showing: Daily Calendar → Appointment Detail → Block Time Modal]</span>
+        <div class="screenshot-gallery">
+          <div class="screenshot-gallery__item">
+            <div class="screenshot-gallery__phone">
+              <div class="screenshot-gallery__screen">
+                <img src="../assets/screenshots/home_screen.png" alt="Daily Calendar" class="screenshot-gallery__img">
+              </div>
+            </div>
           </div>
-          <figcaption>Shop owner dashboard for schedule management</figcaption>
-        </figure>
+          <div class="screenshot-gallery__item">
+            <div class="screenshot-gallery__phone">
+              <div class="screenshot-gallery__screen">
+                <img src="../assets/screenshots/booking.png" alt="Appointment Detail" class="screenshot-gallery__img">
+              </div>
+            </div>
+          </div>
+          <div class="screenshot-gallery__item">
+            <div class="screenshot-gallery__phone">
+              <div class="screenshot-gallery__screen">
+                <img src="../assets/screenshots/login_screen.png" alt="Block Time Modal" class="screenshot-gallery__img">
+              </div>
+            </div>
+          </div>
+        </div>
+        <figcaption style="text-align: center; color: rgba(255,255,255,0.7); font-style: italic; margin-bottom: var(--space-lg);">Shop owner dashboard for schedule management</figcaption>
 
         <div class="screen-annotations">
           <div class="annotation">
@@ -496,32 +517,7 @@
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- ============================================
-       SECTION 9: INTERACTIVE PROTOTYPE
-       ============================================ -->
-  <section class="section">
-    <div class="container">
-      <header class="section__header">
-        <h2 class="section__title">Interactive Prototype</h2>
-        <p class="section__subtitle">Experience the core booking flow</p>
-      </header>
-
-      <div class="prototype-block">
-        <figure class="image-placeholder image-placeholder--prototype">
-          <div class="image-placeholder__inner">
-            <span>[Insert: Figma Embed or Prototype Recording GIF]</span>
-            <p style="margin-top: 16px; font-size: 14px;">Click to interact with the prototype</p>
-          </div>
-        </figure>
-
-        <div class="prototype-links">
-          <p>View the full interactive prototype:</p>
-          <a href="#" class="prototype-link">[Insert Figma Prototype Link]</a>
-        </div>
-      </div>
+      -->
     </div>
   </section>
 
@@ -568,20 +564,13 @@
           <h3>Constraints & Limitations</h3>
           <p>As a student project, this case study has inherent limitations:</p>
           <ul class="outcome-list outcome-list--muted">
-            <li>User research sample size was limited (20 participants)</li>
+            <!-- <li>User research sample size was limited (20 participants)</li> -->
             <li>No production implementation or real-world metrics</li>
             <li>Payment and notification systems designed but not functional</li>
             <li>Market validation limited to Hanoi/HCMC urban areas</li>
           </ul>
         </div>
       </div>
-
-      <figure class="image-placeholder">
-        <div class="image-placeholder__inner">
-          <span>[Insert Image: Final hero shot - multiple screens arranged showing the complete product]</span>
-        </div>
-        <figcaption>BarberQueue MVP - Complete screen collection</figcaption>
-      </figure>
     </div>
   </section>
 
